@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "ApfelGrotezkBrukt";
+    src: url(static/ApfelGrotezk-Brukt.woff2);
+}
+
+@font-face {
+    font-family: "ApfelGrotezkFett";
+    src: url(static/ApfelGrotezk-Fett.woff2);
+}
+
+@font-face {
+    font-family: "ApfelGrotezkRegular";
+    src: url(static/ApfelGrotezk-Regular.woff2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    max-width: 100vw;
+    margin: 0;
+}
+
+header {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%
+}
+
+img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    background-color: rgb(206, 206, 206, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 20px 35px;
+    border-radius: 100px;
+
+}
+
+.navButtons {
+    display: flex;
+    flex: 0.3;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #414141;
+    font-family: "ApfelGrotezkRegular";
+}
+
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.featuredContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+}
+
+.featuredContent {
+    margin: 0;
+    width: 100vw;
+}
+
+.quoteContainer {
+    font-family: "ApfelGrotezkRegular";
+    font-size: 1.8em;
+    color: black;
+    width: 65vw;
+}
+
+.mainContent {
+    padding: 10vh 5vw;
+}
+
+.awardsContainer {
+    margin-top: 10vh;
+    font-family: "ApfelGrotezkRegular";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "ApfelGrotezkRegular";
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "ApfelGrotezkRegular";
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+h4 {
+    margin-top: 10px;
+    font-family: "ApfelGrotezkRegular";
+    font-size: 1.1em;
+}
+
+.awardsCatalog {
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    padding: 10vh 10vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.idg {
+    font-family: "ApfelGrotezkRegular";
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.category {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "ApfelGrotezkRegular";
+    font-size: 1em;
+}
+
+.medal {
+    font-family: "ApfelGrotezkRegular";
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.firstcardImg {
+    width: 530px;
+}
+
+.cardImg {
+    width: 400px;
+}
+
+.worksContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.works {
+    margin-top: 10vh;
+}
+
+.aboutContainer {
+    width: 60vw;
+}
+
+.aboutText {
+    font-family: "ApfelGrotezkRegular";
+    font-size: 1.2em;
+}
