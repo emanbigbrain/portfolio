@@ -41,6 +41,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 75%;
+    height: 15px;
     background-color: rgb(206, 206, 206, 0.4);
     backdrop-filter: blur(10px);
     padding: 20px 35px;
@@ -101,6 +102,10 @@ a:hover, a:active { text-decoration: none; }
     align-items: center;
 }
 
+.logo {
+    width: 110px;
+}
+
 h1 {
     font-family: "ApfelGrotezkRegular";
     font-size: 2em;
@@ -116,6 +121,7 @@ h2 {
 }
 
 h3 {
+    font-family: "ApfelGrotezkRegular";
     margin-top: 0;
     font-size: 1.1em;
 }
@@ -193,4 +199,18 @@ h4 {
 .aboutText {
     font-family: "ApfelGrotezkRegular";
     font-size: 1.2em;
+}
+
+.contactContainer {
+    padding: 0 5vw;
+}
+
+.flexContactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emailText {
+    font-family: "ApfelGrotezkRegular";
 }
