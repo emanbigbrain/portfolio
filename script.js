@@ -15,7 +15,6 @@ function updateCounter(index) {
 }
 
 let carouselProjects = featured;
-// carouselProjects.push("3dfi_2", "Airbeach", "Rhinestone", "Buonissimo")
 
 for (let i = 0; i < carouselProjects.length; i++) {
     let projectWrapper = document.createElement('a')
@@ -28,7 +27,6 @@ for (let i = 0; i < carouselProjects.length; i++) {
     projectImage.src = `./static/${carouselProjects[i].image}`
 
     projectWrapper.appendChild(projectImage)
-    console.log(projectWrapper);
 
     updateCounter("1")
 
@@ -36,7 +34,6 @@ for (let i = 0; i < carouselProjects.length; i++) {
 }
 
 // clone last item for infinite scroll effect
-// carousel.prepend(carousel.children[carouselProjects.length - 1])
 carousel.prepend(carousel.children[carouselProjects.length - 1].cloneNode(true))
 
 nextBtn.addEventListener('click', () => {
@@ -98,14 +95,12 @@ prevBtn.addEventListener('click', () => {
                         x: -window.innerWidth * (carouselProjects.length),
                         duration: 0
                     })
-                    counter = carouselProjects.length;
                 }
 
             }
         })
     } else if (counter === 0) {
         counter = carouselProjects.length - 1;
-        counterElement.innerHTML = `${counter} / ${carouselProjects.length}`
 
         gsap.to(carousel, {
             x: -window.innerWidth * (carouselProjects.length),
