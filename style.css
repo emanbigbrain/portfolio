@@ -237,3 +237,24 @@ h4 {
     -moz-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+.sixthImg {
+    width: 500px;
+}
+
+.twelvethImg {
+    width: 500px;
+}
+
+.emailText {
+    margin-top: 0;
+}
+
+.cHeader {
+    margin-bottom: 0;
+}
+
+.homeLink {
+    display: flex;
+    align-items: center;
+}
