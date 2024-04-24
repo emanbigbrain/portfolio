@@ -116,6 +116,7 @@ a:active {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    cursor: alias;
 }
 
 .carousel .project-wrapper .project-image {
@@ -132,6 +133,7 @@ a:active {
     position: absolute;
     right: 0;
     top: 0;
+    cursor: pointer;
 }
 
 .carousel-wrapper .prev-btn {
@@ -143,6 +145,7 @@ a:active {
     left: 0;
     top: 0;
     z-index: 1;
+    cursor: pointer;
 }
 
 .counter-container {
