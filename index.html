@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -27,16 +29,31 @@
                 <div class="contactButton">
                     <a class="navButtonText" href="#contact">Contact</a>
                 </div>
-            </div>   
+            </div>
         </nav>
     </header>
     <main id="main">
-        <div class="featuredContainer">
-            <video muted autoplay loop playsinline src="static/fixedCarousel.mp4" type="video/mp4" style="pointer-events: none;" class="featuredContent" ></video>
+
+        <div class="carousel-wrapper">
+            <div class="carousel">
+            </div>
+
+            <div class="prev-btn"></div>
+            <div class="next-btn"></div>
+
+            <div class="counter-container">
+                <div class="index"></div> / <div class="total"></div>
+            </div>
         </div>
+
+        <!-- <div class="featuredContainer">
+            <video muted autoplay loop playsinline src="static/fixedCarousel.mp4" type="video/mp4"
+                style="pointer-events: none;" class="featuredContent"></video>
+        </div> -->
         <div class="mainContent">
             <div class="quoteContainer">
-                <p>My philosophy: “Bridging the gap between business and brands. To effectively introduce a brand, you need to be a master in both business and branding”</p>
+                <p>My philosophy: “Bridging the gap between business and brands. To effectively introduce a brand, you
+                    need to be a master in both business and branding”</p>
             </div>
             <div class="awardsContainer" id="awards">
                 <h2>Awards</h2>
@@ -62,108 +79,110 @@
             <div class="works" id="works">
                 <h2> My Branding Works</h2>
                 <div class="worksContainer">
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="firstcardImg" src="static/justphandacoo@3x-100.jpg">
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="firstcardImg" src="static/justphandacoo@3x-100.jpg">
+                            </div>
+                            <h4>PH Innovation</h4>
                         </div>
-                        <h4>PH Innovation</h4>
-                    </div>
-                </a>
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="cardImg" src="static/EU.png">
+                    </a>
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="cardImg" src="static/EU.png">
+                            </div>
+                            <h4>Delegation of the EU to Japan</h4>
                         </div>
-                        <h4>Delegation of the EU to Japan</h4>
-                    </div>
-                </a>
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="cardImg" src="static/Rhinestone.png">
+                    </a>
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="cardImg" src="static/Rhinestone.png">
+                            </div>
+                            <h4>Rhinestone</h4>
                         </div>
-                        <h4>Rhinestone</h4>
-                    </div>
-                </a>
-             </div>
-             <div class="worksContainer">
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="firstcardImg" src="static/Airbeach.png">
-                        </div>
-                        <h4>Airbeach</h4>
-                    </div>
-                </a>
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="cardImg" src="static/MicroTech.png">
-                        </div>
-                        <h4>MicroTech</h4>
-                    </div>
-                </a>
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="cardImg" src="static/Ripe.png">
-                        </div>
-                        <h4>Ripe</h4>
-                    </div>
-                </a>
-             </div>
-             <div class="worksContainer">
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="firstcardImg" src="static/Hedstrom.png">
-                        </div>
-                        <h4>Hedström Ebba</h4>
-                    </div>
-                </a>
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="cardImg" src="static/KPT.png">
-                        </div>
-                        <h4>Kien Phong Tran</h4>
-                    </div>
-                </a>
-                <a href="#" class="projectLink">
-                    <div class="projectCard">
-                        <div class="imgContainer">
-                            <img class="cardImg" src="static/Buonissimo.png">
-                        </div>
-                        <h4>Buonissimo</h4>
-                    </div>
-                </a>
-             </div>
-             <a href="#" class="projectLink">
-                <div class="projectCard">
-                    <div class="imgContainer">
-                        <img class="cardImg" src="static/3dfi.png">
-                    </div>
-                    <h4>3DFI</h4>
+                    </a>
                 </div>
-            </a>
+                <div class="worksContainer">
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="firstcardImg" src="static/Airbeach.png">
+                            </div>
+                            <h4>Airbeach</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="cardImg" src="static/MicroTech.png">
+                            </div>
+                            <h4>MicroTech</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="cardImg" src="static/Ripe.png">
+                            </div>
+                            <h4>Ripe</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="worksContainer">
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="firstcardImg" src="static/Hedstrom.png">
+                            </div>
+                            <h4>Hedström Ebba</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="cardImg" src="static/KPT.png">
+                            </div>
+                            <h4>Kien Phong Tran</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="projectLink">
+                        <div class="projectCard">
+                            <div class="imgContainer">
+                                <img class="cardImg" src="static/Buonissimo.png">
+                            </div>
+                            <h4>Buonissimo</h4>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="projectLink">
+                    <div class="projectCard">
+                        <div class="imgContainer">
+                            <img class="cardImg" src="static/3dfi.png">
+                        </div>
+                        <h4>3DFI</h4>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="contactContainer" id="contact">
             <div class="flexContactContainer">
-            <div class="detailContainer">
-                <h3>Email:</h3>
-                <p class="emailText">emmanuel.e.lutterodt@gmail.com</p>
+                <div class="detailContainer">
+                    <h3>Email:</h3>
+                    <p class="emailText">emmanuel.e.lutterodt@gmail.com</p>
+                </div>
+                <div class="detailContainer">
+                    <h3>LinkedIn:</h3>
+                    <a href="https://www.linkedin.com/in/lutterodtemmanuel/">
+                        <p>Emmanuel Lutterodt</p>
+                    </a>
+                </div>
+                <div class="detailContainer">
+                    <h3>Copyright 2024</h3>
+                    <p class="emailText">Emmanuel Lutterodt</p>
+                </div>
             </div>
-            <div class="detailContainer">
-                <h3>LinkedIn:</h3>
-                <a href="https://www.linkedin.com/in/lutterodtemmanuel/"><p>Emmanuel Lutterodt</p></a>
-            </div>
-            <div class="detailContainer">
-                <h3>Copyright 2024</h3>
-                <p class="emailText">Emmanuel Lutterodt</p>
-            </div>
-        </div>
         </div>
     </main>
     <footer>
@@ -173,5 +192,9 @@
             <div></div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
