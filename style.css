@@ -28,7 +28,8 @@ header {
     display: flex;
     justify-content: center;
     position: fixed;
-    width: 100%
+    width: 100%;
+    z-index: 1000;
 }
 
 img {
@@ -213,4 +214,26 @@ h4 {
 
 .emailText {
     font-family: "ApfelGrotezkRegular";
+}
+
+.cardOne:hover, .cardTwo:hover, .cardThree:hover, .cardFour:hover, .cardFive:hover, .cardSix:hover, .cardSeven:hover, .cardEight:hover, .cardNine:hover, .cardTen:hover {
+    text-decoration: underline;
+}
+
+.firstcardImg {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.cardImg {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.cardOne:hover .firstcardImg, .cardTwo:hover .secondImg, .cardThree:hover .thirdImg, .cardFour:hover .fourthImg, .cardFive:hover .fifthImg, .cardSix:hover .sixthImg, .cardSeven:hover .seventhImg, .cardEight:hover .eighthImg, .cardNine:hover .ninethImg, .cardTen .tenthImg {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
 }
