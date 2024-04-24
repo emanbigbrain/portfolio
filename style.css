@@ -94,6 +94,7 @@ a:active {
 .carousel-wrapper {
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
     overflow-x: hidden;
     position: relative;
     z-index: 0;
