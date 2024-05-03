@@ -8,6 +8,7 @@ let counterIndex = document.querySelector('.index');
 let counterTotal = document.querySelector('.total');
 
 let counter = 1;
+let transitionTime = 0.4;
 
 function updateCounter(index) {
     counterIndex.innerHTML = `${index}`
@@ -37,14 +38,17 @@ for (let i = 0; i < carouselProjects.length; i++) {
 carousel.prepend(carousel.children[carouselProjects.length - 1].cloneNode(true))
 
 nextBtn.addEventListener('click', () => {
-    // clearInterval(timer)
+    clearInterval(timer)
+    timer = setInterval(() => {
+        nextBtn.click()
+    }, 5000)
 
     if (counter < carouselProjects.length) {
         counter++;
 
         gsap.to(carousel, {
             x: -window.innerWidth * counter,
-            duration: 1,
+            duration: transitionTime,
             ease: "expo.inOut",
             onComplete: () => {
                 if (counter === carouselProjects.length) {
@@ -65,7 +69,7 @@ nextBtn.addEventListener('click', () => {
             onComplete: () => {
                 gsap.to(carousel, {
                     x: -window.innerWidth * counter,
-                    duration: 1,
+                    duration: transitionTime,
                     ease: "expo.inOut",
                 })
             }
@@ -80,14 +84,18 @@ nextBtn.addEventListener('click', () => {
 })
 
 prevBtn.addEventListener('click', () => {
-    // clearInterval(timer)
+
+    clearInterval(timer)
+    timer = setInterval(() => {
+        nextBtn.click()
+    }, 5000)
 
     if (counter > 0) {
         counter--;
 
         gsap.to(carousel, {
             x: -window.innerWidth * counter,
-            duration: 1,
+            duration: transitionTime,
             ease: "expo.inOut",
             onComplete: () => {
                 if (counter === 0) {
@@ -108,7 +116,7 @@ prevBtn.addEventListener('click', () => {
             onComplete: () => {
                 gsap.to(carousel, {
                     x: -window.innerWidth * counter,
-                    duration: 1,
+                    duration: transitionTime,
                     ease: "expo.inOut",
                 })
             }
@@ -122,7 +130,9 @@ prevBtn.addEventListener('click', () => {
     }
 })
 
-// timer switch 
-// let timer = setInterval(() => {
-//     nextBtn.click()
-// }, 5000)
+
+var timer = setInterval(() => {
+    nextBtn.click()
+}, 5000)
+
+// startTimer()
